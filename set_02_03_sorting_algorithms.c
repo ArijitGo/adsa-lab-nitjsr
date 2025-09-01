@@ -382,13 +382,13 @@ int main(){
 
         switch (choice) {
             case 1:
-                bubble_sort(arr, n);
+                insertion_sort(arr, n);
                 break;
             case 2:
-                selection_sort(arr, n);
+                bubble_sort(arr, n);
                 break;
             case 3:
-                insertion_sort(arr, n);
+                selection_sort(arr, n);
                 break;
             case 4:
                 shell_sort(arr, n);
@@ -430,4 +430,5 @@ int main(){
     }
     printf("\n");
     return 0;
+
 }
