@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #define SIZE 5   // capacity of array queue
 
-/***********************
-   ARRAY CIRCULAR QUEUE
- ***********************/
 typedef struct {
     int items[SIZE];
     int front, rear;
@@ -60,9 +57,6 @@ void displayArray(ArrayQueue *q) {
     printf("\n");
 }
 
-/************************
- LINKED LIST CIRCULAR QUEUE
- ************************/
 typedef struct Node {
     int data;
     struct Node *next;
@@ -126,7 +120,6 @@ void displayList(ListQueue *q) {
 }
 
 int main() {
-    // --- Array Queue Demo ---
     ArrayQueue aq;
     initArrayQueue(&aq);
     enqueueArray(&aq, 5);
@@ -138,7 +131,6 @@ int main() {
     enqueueArray(&aq, 2);
     displayArray(&aq);
 
-    // --- List Queue Demo ---
     ListQueue lq;
     initListQueue(&lq);
     enqueueList(&lq, 10);
@@ -152,3 +144,4 @@ int main() {
 
     return 0;
 }
+
