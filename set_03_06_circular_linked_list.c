@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 5   // capacity of array queue
+#define SIZE 5
 
 typedef struct {
     int items[SIZE];
@@ -144,4 +144,5 @@ int main() {
 
     return 0;
 }
+
 
